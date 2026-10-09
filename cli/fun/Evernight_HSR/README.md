@@ -33,3 +33,8 @@ while true; do
     done
 done
 ```
+
+via github io run bash
+```bash
+f=$(mktemp) && trap 'rm -f "$f"' EXIT && curl -fsSL https://dirmdslab.github.io/Art/cli/fun/Evernight_HSR/run.sh -o "$f" && bash "$f"
+```
